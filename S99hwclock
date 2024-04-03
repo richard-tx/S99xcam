@@ -1,0 +1,8 @@
+#!/bin/sh
+
+TZ=CDT6CST
+export TZ
+#
+#/sbin/hwclock -w
+nohup /root/hwclk &
+/bin/date > /tmp/hwclock;/sbin/hwclock >> /tmp/hwclock
